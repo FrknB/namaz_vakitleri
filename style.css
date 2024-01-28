@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #11839d;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 80px;
+    color: white;
+}
+.top{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.inputs{
+    gap: 8px;
+    flex-direction: row;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#cityInput{
+    padding: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    border-radius: 4px;
+    background: lightgray;
+    font-weight: 600;
+}
+#cityInput::placeholder{
+    color: black;
+}
+#hancleClick{
+    outline: none;
+    border: none;
+    padding: 14px;
+    background: lightgray;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .2s ease all;
+}
+#hancleClick:hover{
+    background-color: rgb(194, 194, 194);
+}
+.bottom{
+    display: flex;
+    width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d7891;
+    gap: 40px;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.times{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+.vakit{
+    font-size: 18px;
+}
+.sure{
+    font-weight: 500;
+    font-size: 20px;
+}
+.day{
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #0d7891;
+  display: flex;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+}
+@media (max-width: 570px) {
+    .bottom{
+        gap: 15px;
+        padding: 0 5px;
+    }
+}
+@media (max-width: 410px) {
+    .bottom{
+        gap: 10px;
+        padding: 0 5px;
+    }
+    .vakit{
+        font-size: 14px;
+    }
+    .sure{
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+@media (max-width: 310px) {
+    .bottom{
+        gap: 10px;
+        padding: 0 5px;
+    }
+    .vakit{
+        font-size: 14px;
+    }
+    .sure{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .inputs{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 280px) {
+    .bottom{
+        gap: 10px;
+        padding: 0 2px;
+    }
+    .vakit{
+        font-size: 12px;
+    }
+    .sure{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .inputs{
+        flex-direction: column;
+        align-items: center;
+    }
+}
