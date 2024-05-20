@@ -61,7 +61,7 @@ switch (month) {
 }
 
 hancleClick.addEventListener("click", () =>{
-    const token = "YOUR API KEY";
+    const token = "apikey 0XyYUfdg5igLsPHTVVHvJd:2GWNVEWaYvs6fS0lEPXt81";
     const uri = `https://api.collectapi.com/pray/all?data.city=${cityInput.value}`;
 
     fetch(uri, {
